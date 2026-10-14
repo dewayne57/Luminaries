@@ -1,0 +1,9 @@
+{
+    "mplab.clangd.compileCommandsDir": "${workspaceFolder}\\_build\\Luminaries\\default",
+    "mplab.clangd.arguments": [
+        "--header-insertion=never"
+    ],
+    "mplab.clangd.path": "c:\\Program Files\\Microchip\\xc8\\v3.10\\bin\\xc8-clangd.exe",
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "cmake.sourceDirectory": "C:/Users/Dewayne/Documents/GitHub/Luminaries/cmake/Luminaries/default"
+}
