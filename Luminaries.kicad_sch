@@ -3365,7 +3365,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "078d5ee9-a0d6-4fb3-aa22-c148e5e78067")
-		(property "Reference" "D15"
+		(property "Reference" "D16"
 			(at 240.03 82.8675 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3440,7 +3440,7 @@
 		(instances
 			(project "Luminaries"
 				(path "/57ff6562-df86-4ca6-888d-0cf2b2dca783"
-					(reference "D15")
+					(reference "D16")
 					(unit 1)
 				)
 			)
@@ -3634,7 +3634,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "106c8b68-396a-4b41-9b39-edfab81fe85a")
-		(property "Reference" "D6"
+		(property "Reference" "D2"
 			(at 162.56 51.1175 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3709,7 +3709,7 @@
 		(instances
 			(project "Luminaries"
 				(path "/57ff6562-df86-4ca6-888d-0cf2b2dca783"
-					(reference "D6")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -3898,7 +3898,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1aea4452-c37d-4238-8824-7b545db1e955")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR018"
 			(at 236.22 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -3958,7 +3958,7 @@
 		(instances
 			(project "Luminaries"
 				(path "/57ff6562-df86-4ca6-888d-0cf2b2dca783"
-					(reference "#PWR015")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -4069,7 +4069,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "20d20917-253d-46cc-a08f-cdde5783c5da")
-		(property "Reference" "U1"
+		(property "Reference" "U2"
 			(at 115.2951 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4154,7 +4154,7 @@
 		(instances
 			(project "Luminaries"
 				(path "/57ff6562-df86-4ca6-888d-0cf2b2dca783"
-					(reference "U1")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -4171,7 +4171,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2166b33b-74e9-4030-9ae1-1156b0697017")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR015"
 			(at 198.12 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -4231,7 +4231,7 @@
 		(instances
 			(project "Luminaries"
 				(path "/57ff6562-df86-4ca6-888d-0cf2b2dca783"
-					(reference "#PWR017")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -4249,7 +4249,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "273c255a-eb36-4d24-83f0-a583ec60a0a7")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR05"
 			(at 76.2 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -4309,7 +4309,7 @@
 		(instances
 			(project "Luminaries"
 				(path "/57ff6562-df86-4ca6-888d-0cf2b2dca783"
-					(reference "#PWR010")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -4327,7 +4327,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2fb769b0-0001-46ff-913b-e6fc4bcc6c71")
-		(property "Reference" "D16"
+		(property "Reference" "D17"
 			(at 240.03 93.0275 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4402,7 +4402,7 @@
 		(instances
 			(project "Luminaries"
 				(path "/57ff6562-df86-4ca6-888d-0cf2b2dca783"
-					(reference "D16")
+					(reference "D17")
 					(unit 1)
 				)
 			)
@@ -4420,7 +4420,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "339f789c-ef02-4de8-910d-fd0947f1c954")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR012"
 			(at 113.03 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -4480,7 +4480,7 @@
 		(instances
 			(project "Luminaries"
 				(path "/57ff6562-df86-4ca6-888d-0cf2b2dca783"
-					(reference "#PWR08")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -4580,7 +4580,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3b1808b4-3050-4e12-831b-22752560b117")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR03"
 			(at 64.77 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -4640,7 +4640,7 @@
 		(instances
 			(project "Luminaries"
 				(path "/57ff6562-df86-4ca6-888d-0cf2b2dca783"
-					(reference "#PWR05")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -4658,7 +4658,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4914aefc-af72-478c-9283-9f3afb79735b")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR014"
 			(at 158.75 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -4718,7 +4718,7 @@
 		(instances
 			(project "Luminaries"
 				(path "/57ff6562-df86-4ca6-888d-0cf2b2dca783"
-					(reference "#PWR013")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -4816,7 +4816,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5000b62d-983b-4fcf-9af6-0b72a31a00f8")
-		(property "Reference" "D2"
+		(property "Reference" "D6"
 			(at 162.56 91.7575 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4891,7 +4891,7 @@
 		(instances
 			(project "Luminaries"
 				(path "/57ff6562-df86-4ca6-888d-0cf2b2dca783"
-					(reference "D2")
+					(reference "D6")
 					(unit 1)
 				)
 			)
@@ -4909,7 +4909,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "534ae7b8-2de3-4139-9a80-54ef723a8ad1")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR016"
 			(at 198.12 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -4969,7 +4969,7 @@
 		(instances
 			(project "Luminaries"
 				(path "/57ff6562-df86-4ca6-888d-0cf2b2dca783"
-					(reference "#PWR014")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -5343,7 +5343,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "652a7b03-a160-4872-a738-ea5f41925a05")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR01"
 			(at 46.99 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -5403,7 +5403,7 @@
 		(instances
 			(project "Luminaries"
 				(path "/57ff6562-df86-4ca6-888d-0cf2b2dca783"
-					(reference "#PWR02")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -5420,7 +5420,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6577dad1-abb9-47d8-9601-701d31d3a03e")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR06"
 			(at 76.2 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -5480,7 +5480,7 @@
 		(instances
 			(project "Luminaries"
 				(path "/57ff6562-df86-4ca6-888d-0cf2b2dca783"
-					(reference "#PWR011")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -5498,7 +5498,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "65a86c5c-8f36-4d8d-9e4b-fddfb7e4f710")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR08"
 			(at 81.28 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -5558,7 +5558,7 @@
 		(instances
 			(project "Luminaries"
 				(path "/57ff6562-df86-4ca6-888d-0cf2b2dca783"
-					(reference "#PWR04")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -5576,7 +5576,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6bf9fda1-e61f-4b7c-af9d-e0a99b6096b2")
-		(property "Reference" "D3"
+		(property "Reference" "D5"
 			(at 162.56 81.5975 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5651,7 +5651,7 @@
 		(instances
 			(project "Luminaries"
 				(path "/57ff6562-df86-4ca6-888d-0cf2b2dca783"
-					(reference "D3")
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -5921,7 +5921,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9358e01a-6e45-4bc6-bb58-e5263c7c0dcb")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR011"
 			(at 113.03 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -5981,7 +5981,7 @@
 		(instances
 			(project "Luminaries"
 				(path "/57ff6562-df86-4ca6-888d-0cf2b2dca783"
-					(reference "#PWR07")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -5998,7 +5998,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "936f3767-8f92-4a17-9714-ee673c6a1f9c")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR09"
 			(at 95.25 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -6058,7 +6058,7 @@
 		(instances
 			(project "Luminaries"
 				(path "/57ff6562-df86-4ca6-888d-0cf2b2dca783"
-					(reference "#PWR03")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -6075,7 +6075,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "963225f6-fd90-403b-9b60-afd9e730a2ce")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR013"
 			(at 158.75 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -6135,7 +6135,7 @@
 		(instances
 			(project "Luminaries"
 				(path "/57ff6562-df86-4ca6-888d-0cf2b2dca783"
-					(reference "#PWR016")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -6235,7 +6235,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a0af78f9-35f6-499f-9734-eef432c1fbb0")
-		(property "Reference" "D12"
+		(property "Reference" "D13"
 			(at 240.03 52.3875 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6310,7 +6310,7 @@
 		(instances
 			(project "Luminaries"
 				(path "/57ff6562-df86-4ca6-888d-0cf2b2dca783"
-					(reference "D12")
+					(reference "D13")
 					(unit 1)
 				)
 			)
@@ -6514,7 +6514,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c1eced99-29b5-4f45-a73e-5ca8edae4e54")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR07"
 			(at 76.2 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -6574,7 +6574,7 @@
 		(instances
 			(project "Luminaries"
 				(path "/57ff6562-df86-4ca6-888d-0cf2b2dca783"
-					(reference "#PWR012")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -6591,7 +6591,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c3440347-60a5-4cdd-ba58-eb842b8e5209")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR02"
 			(at 64.77 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -6651,7 +6651,7 @@
 		(instances
 			(project "Luminaries"
 				(path "/57ff6562-df86-4ca6-888d-0cf2b2dca783"
-					(reference "#PWR01")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -6669,7 +6669,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c34dc707-6885-46ca-86b9-2b6d11f59574")
-		(property "Reference" "D14"
+		(property "Reference" "D15"
 			(at 240.03 72.7075 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6744,7 +6744,7 @@
 		(instances
 			(project "Luminaries"
 				(path "/57ff6562-df86-4ca6-888d-0cf2b2dca783"
-					(reference "D14")
+					(reference "D15")
 					(unit 1)
 				)
 			)
@@ -6871,7 +6871,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ca1fdd9b-78ae-4672-a7dc-b59e132559ca")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR04"
 			(at 76.2 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -6931,7 +6931,7 @@
 		(instances
 			(project "Luminaries"
 				(path "/57ff6562-df86-4ca6-888d-0cf2b2dca783"
-					(reference "#PWR09")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -7202,7 +7202,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e0e5224b-70c0-4d05-bcab-96c108d58ad9")
-		(property "Reference" "D13"
+		(property "Reference" "D14"
 			(at 240.03 62.5475 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7277,7 +7277,7 @@
 		(instances
 			(project "Luminaries"
 				(path "/57ff6562-df86-4ca6-888d-0cf2b2dca783"
-					(reference "D13")
+					(reference "D14")
 					(unit 1)
 				)
 			)
@@ -7295,7 +7295,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e7d6d6f6-391a-49fd-8efa-d174e701506b")
-		(property "Reference" "D17"
+		(property "Reference" "D12"
 			(at 240.03 42.2275 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7370,7 +7370,7 @@
 		(instances
 			(project "Luminaries"
 				(path "/57ff6562-df86-4ca6-888d-0cf2b2dca783"
-					(reference "D17")
+					(reference "D12")
 					(unit 1)
 				)
 			)
@@ -7388,7 +7388,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ec887533-929b-4e4c-859e-75b115ba4bd2")
-		(property "Reference" "D5"
+		(property "Reference" "D3"
 			(at 162.56 61.2775 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7463,7 +7463,7 @@
 		(instances
 			(project "Luminaries"
 				(path "/57ff6562-df86-4ca6-888d-0cf2b2dca783"
-					(reference "D5")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -7480,7 +7480,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f10c3715-d051-4009-b8a0-c9fb54495491")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR017"
 			(at 236.22 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -7540,7 +7540,7 @@
 		(instances
 			(project "Luminaries"
 				(path "/57ff6562-df86-4ca6-888d-0cf2b2dca783"
-					(reference "#PWR018")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -7558,7 +7558,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f4d19e53-af81-4d76-ae97-377b41291493")
-		(property "Reference" "U2"
+		(property "Reference" "U1"
 			(at 81.28 35.56 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7623,7 +7623,7 @@
 		(instances
 			(project "Luminaries"
 				(path "/57ff6562-df86-4ca6-888d-0cf2b2dca783"
-					(reference "U2")
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -7831,7 +7831,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fc5aed18-9745-419b-ab80-bee22c39a64d")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR010"
 			(at 95.25 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -7891,7 +7891,7 @@
 		(instances
 			(project "Luminaries"
 				(path "/57ff6562-df86-4ca6-888d-0cf2b2dca783"
-					(reference "#PWR06")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
