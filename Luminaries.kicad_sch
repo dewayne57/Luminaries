@@ -3478,7 +3478,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+		(property "Footprint" "Connector_BarrelJack:BarrelJack_Horizontal"
 			(at 38.1 45.466 0)
 			(hide yes)
 			(show_name no)
@@ -3747,7 +3747,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
 			(at 68.58 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -3838,7 +3838,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_10x10"
 			(at 64.77 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -4520,7 +4520,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Array_SIP4"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 77.216 143.764 90)
 			(hide yes)
 			(show_name no)
@@ -5009,7 +5009,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_4x3"
 			(at 95.25 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -5091,7 +5091,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Array_SIP4"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 235.204 101.346 90)
 			(hide yes)
 			(show_name no)
@@ -5173,7 +5173,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Array_SIP4"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 157.734 101.346 90)
 			(hide yes)
 			(show_name no)
@@ -5689,7 +5689,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 68.58 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -5769,7 +5769,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Array_SIP4"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 221.234 113.284 90)
 			(hide yes)
 			(show_name no)
@@ -6175,7 +6175,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Array_SIP4"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 197.104 101.346 90)
 			(hide yes)
 			(show_name no)
@@ -6969,7 +6969,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 68.58 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -7142,7 +7142,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Array_SIP4"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 183.134 113.284 90)
 			(hide yes)
 			(show_name no)
@@ -7771,7 +7771,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Array_SIP4"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 143.764 113.284 90)
 			(hide yes)
 			(show_name no)
