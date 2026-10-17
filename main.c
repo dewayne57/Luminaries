@@ -42,7 +42,7 @@
 #pragma config FOSC = INTOSCIO // Internal osc with pins set to I/O
 #pragma config WDTE = OFF      // Watchdog Timer Enable bit (WDT disabled)
 #pragma config PWRTE = ON      // Power-up Timer Enable bit (PWRT enabled)
-#pragma config MCLRE = ON      // MCLR is enabled
+#pragma config MCLRE = OFF     // MCLR is enabled
 #pragma config CP = OFF        // Code protection is disabled)
 #pragma config CPD = OFF       // Data protection is disabled)
 #pragma config BOREN = ON      // Brown Out Detect (BOR enabled)
@@ -53,7 +53,13 @@
 #define MAX_LEVEL 32         // PWM brightness steps
 #define FRAMES_PER_STEP 4    // PWM frames between brightness steps (~6 mS)
 #define VDD_VOLTAGE_MV 5000u // Circuit supply voltage in millivolts
-#define COMPARATOR_VOLTAGE_LEVEL_MV 1500u // threshold in millivolts (1.5V)
+
+// Use two different comparator "trip" points to introduce hysteresis in the
+// comparator input to avoid rapid toggling when the input is near the threshold.
+// The low trip point is used to determine when the comparator should trigger,
+// while the high trip point is used to determine when the comparator should reset.
+#define COMPARATOR_LOW_TRIP_MV 300u
+#define COMPARATOR_HIGH_TRIP_MV 350u
 
 /*
  * Global state values
@@ -68,6 +74,7 @@ struct {
  */
 void initialize(void);
 unsigned char approach(unsigned char level, unsigned char target);
+static void setComparatorTripVoltage(unsigned int thresholdMv);
 
 /// Interrupt Service Routine for the comparator.
 /// @brief Handles the comparator interrupt and updates the triggered flag.
@@ -94,7 +101,9 @@ void __interrupt() isr(void) {
    */
   if (PIR1bits.CMIF) {
     flags.triggered = CMCON0bits.COUT; // If comparator is 1, we are trig
-    PIR1bits.CMIF = 0;                 // reset interrupt flag
+    setComparatorTripVoltage(flags.triggered ? COMPARATOR_HIGH_TRIP_MV
+                                             : COMPARATOR_LOW_TRIP_MV);
+    PIR1bits.CMIF = 0; // reset interrupt flag
   }
 }
 
@@ -118,6 +127,7 @@ int main(void) {
    */
   if (CMCON0bits.COUT) {
     flags.triggered = 1;
+    setComparatorTripVoltage(COMPARATOR_HIGH_TRIP_MV);
   }
 
 loop:
@@ -194,6 +204,34 @@ unsigned char approach(unsigned char level, unsigned char target) {
   return level;
 }
 
+/// @brief Programs the comparator voltage-reference threshold.
+/// @param thresholdMv Desired voltage reference in millivolts.
+static void setComparatorTripVoltage(unsigned int thresholdMv) {
+  unsigned int vddMv = VDD_VOLTAGE_MV;
+  unsigned char vrCode = 0;
+  unsigned int lowRangeMaxMv = (vddMv * 15u) / 24u;
+  unsigned int highRangeMaxMv = (vddMv * 23u) / 32u; // 0.71875 * Vdd
+
+  if (thresholdMv > highRangeMaxMv) {
+    thresholdMv = highRangeMaxMv;
+  }
+
+  if (thresholdMv <= lowRangeMaxMv) {
+    VRCONbits.VRR = 1; // Low range: Vref = Vdd * (VR / 24)
+    vrCode = (unsigned char)((thresholdMv * 24u + (vddMv / 2u)) / vddMv);
+  } else {
+    VRCONbits.VRR = 0; // High range: Vref = Vdd * (0.25 + VR/32)
+    vrCode =
+        (unsigned char)(((thresholdMv * 32u) + (vddMv / 2u)) / vddMv - 8u);
+  }
+
+  if (vrCode > 0x0F) {
+    vrCode = 0x0F;
+  }
+
+  VRCONbits.VR = vrCode;
+}
+
 /// @brief Build a random seed from ADC noise on GP0/AN0.
 /// @return A 16-bit random seed generated from ADC noise.
 /// @details The function reads the least significant bit of 16 consecutive ADC
@@ -263,37 +301,10 @@ void initialize(void) {
   ADCON0 = 0x00;
 
   /*
-   * Set up the comparator and the internal voltage reference.
-   * Store the desired threshold in millivolts and convert it to the proper
-   * 4-bit VR code without using floating-point math.
+   * Start with the low trip point.  Once the comparator triggers, the ISR
+   * raises this reference to the high trip point until the input resets.
    */
-  {
-    unsigned int thresholdMv = COMPARATOR_VOLTAGE_LEVEL_MV;
-    unsigned int vddMv = VDD_VOLTAGE_MV;
-    unsigned char vrCode = 0;
-    unsigned int lowRangeMaxMv = (vddMv * 15u) / 24u;
-    unsigned int highRangeMaxMv = (vddMv * 23u) / 32u; // 0.71875 * Vdd
-
-    if (thresholdMv > highRangeMaxMv) {
-      thresholdMv =
-          highRangeMaxMv; // Clamp to the largest valid comparator threshold
-    }
-
-    if (thresholdMv <= lowRangeMaxMv) {
-      VRCONbits.VRR = 1; // Low range: Vref = Vdd * (VR / 24)
-      vrCode = (unsigned char)((thresholdMv * 24u + (vddMv / 2u)) / vddMv);
-    } else {
-      VRCONbits.VRR = 0; // High range: Vref = Vdd * (0.25 + VR/32)
-      vrCode =
-          (unsigned char)(((thresholdMv * 32u) + (vddMv / 2u)) / vddMv - 8u);
-    }
-
-    if (vrCode > 0x0F) {
-      vrCode = 0x0F; // Clamp to a valid 4-bit VR code
-    }
-
-    VRCONbits.VR = vrCode;
-  }
+  setComparatorTripVoltage(COMPARATOR_LOW_TRIP_MV);
   VRCONbits.VREN = 1; // Enable voltage reference
   // Inverting input of the comparator is AN1, Non-inverting input is VRef,
   // and the comparator output is internal

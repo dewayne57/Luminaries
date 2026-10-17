@@ -12,3 +12,7 @@ _build/
 cmake/**/.generated/*
 cmake/**/CMake*
 out/
+main.c
+debug/default/queuelogs/debugtool.txt
+Luminarie Base Plate-LuminariesBase.3mf
+Luminarie Base Plate.20261017-144147.FCBak
